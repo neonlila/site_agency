@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2026-08-06UTC21:00:490">
+        <header>
+            <authorName>Kristina Wiemann</authorName>
+            <authorEmail>neongame@outlook.com</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="backend_layout.default">
+                <source>Default</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.homepage">
+                <source>Homepage</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.subpage">
+                <source>Subpage</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

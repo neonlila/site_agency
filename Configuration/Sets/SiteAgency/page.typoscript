@@ -1,0 +1,51 @@
+page = PAGE
+page {
+    shortcutIcon = EXT:site_agency/Resources/Public/Icons/favicon.ico
+    typeNum = 0
+
+    10 = PAGEVIEW
+    10 {
+        paths {
+            0 = EXT:site_agency/Resources/Private/PageView/
+        }
+
+        dataProcessing {
+            // this is important for the CONTENT partial.
+            10 = page-content
+            10 {
+                as = pageContent
+            }
+
+            20 = menu
+            20 {
+                as = mainMenu
+                special = directory
+                levels = 3
+                special.value = {$siteAgency.mainMenuId}
+            }
+
+            30 = menu
+            30 {
+                as = breadcrumb
+                special = rootline
+                special.range = 0|-1
+            }
+
+            40 = menu
+            40 {
+                as = footer
+                special = directory
+                levels = 2
+                special.value = {$siteAgency.footerMenuId}
+            }
+        }
+    }
+
+    includeCSS {
+        site_agency_css = {$siteAgency.siteCssPath}
+    }
+
+    includeJSFooter {
+        site_agency_scripts = {$siteAgency.siteJsiteJsPath}
+    }
+}

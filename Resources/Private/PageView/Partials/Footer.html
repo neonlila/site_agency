@@ -1,0 +1,39 @@
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <f:image src="{site.settings.siteAgency.siteLogo}" alt="{site.settings.siteAgency.siteLogoAlt}" />
+                <p>{site.settings.siteAgency.companyName} <br /> 
+                    {site.settings.siteAgency.companyAddress} <br />
+                    {site.settings.siteAgency.companyCity} {site.settings.siteAgency.companyZip} <br />  
+                </p>
+                <p>
+                    {site.settings.siteAgency.companyContactPerson} <br />
+                    {site.settings.siteAgency.companyEmail} <br />
+                    {site.settings.siteAgency.companyPhone}
+                </p>
+            </div>
+            <div class="col-4">
+                <h3>Links</h3>
+                <f:for each="{footer}" as="footerItem">
+                    <li class="{f:if(condition: footerItem.active, then:'active')}">
+                        <a href="{footerItem.link}" target="{footerItem.target}" title="{footerItem.title}">
+                            {footerItem.title}
+                        </a>
+                    </li>
+                </f:for>
+            </div>
+            <div class="col-4">
+                <f:if condition="{site.settings.siteAgency.socialFacebookOn}">
+                    <a href="{site.settings.siteAgency.socialFacebookLink}">Facebook</a>
+                </f:if>
+                <f:if condition="{site.settings.siteAgency.socialInstagramOn}">
+                    <a href="{site.settings.siteAgency.socialInstagramLink}">Instagram</a>
+                </f:if>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <f:format.date format="Y" base="{dateObject}">0 year</f:format.date> &copy; {site.settings.siteAgency.companyName}
+    </div>
+</footer>

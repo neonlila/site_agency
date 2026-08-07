@@ -1,0 +1,30 @@
+<f:layout name="Default"/>
+<f:section name="Main">
+    <section id="subsection_hero" class="container">
+        <f:render partial="Content" arguments="{records: content.hero.records}"/>
+    </section>
+
+    <f:render partial="Navigation/Breadcrumb" arguments="{_all}"/>
+    
+    <section id="subsection_content" class="container">
+        <div class="row">
+            <div class="col-md-8">
+-                <div class="h-100 p-5 text-bg-white">
+-                    <h2>Page content</h2>
+-                    <p>The content of each page can be displayed here. </p>
+-                </div>
++                <f:render partial="Content" arguments="{records: content.context.records}"/>
+            </div>
+            <div class="col-md-4">
+-                <div class="h-100 p-5 bg-body-tertiary">
+-                    <h2>Sidebar </h2>
+-                    <p>Place for some shared content</p>
+-                </div>
++                 <f:render partial="Content" arguments="{records: content.sidebar.records}"/>
+            </div>
+        </div>
+    </section>
+    <section id="subsection_news">
+        <f:render partial="Content" arguments="{records: content.news.records}"/>
+    </section>
+</f:section>

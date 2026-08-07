@@ -1,0 +1,23 @@
+@import './PageTsConfig/'
+@import './PageTsConfig/BackendLayouts/'
+
+
+RTE {
+    default {
+        preset = site_agency
+    }
+}
+
+TCEFORM {
+    pages {
+
+    }
+    tt_content {
+
+    }
+}
+
+TCEMAIN {
+
+}
+

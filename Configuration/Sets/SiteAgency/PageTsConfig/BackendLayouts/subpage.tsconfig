@@ -1,0 +1,47 @@
+mod.web_layout.BackendLayouts {
+  subpageLayout {
+    title = LLL:EXT:site_agency/Resources/Private/Language/locallang_be.xlf:backend_layout.subpage
+    icon = EXT:site_agency/Resources/Public/Icons/BackendLayouts/default.svg
+    config {
+      backend_layout {
+        colCount = 1
+        rowCount = 3
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Hero
+                colPos = 0
+                identifier = hero
+                slideMode = slide
+              }
+            }
+          }
+          2 {
+            columns {
+              1 {
+                name = Content Area
+                colPos = 1
+                identifier = context
+              }
+              2 {
+                name = Sidebar Area
+                colPos = 2
+                identifier = sidebar
+              }
+            }
+          }
+          3 {
+            columns {
+              1 {
+                name = News Area
+                colPos = 3
+                identifier = news
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

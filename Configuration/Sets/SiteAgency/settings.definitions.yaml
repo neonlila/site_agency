@@ -1,0 +1,175 @@
+# define your category
+categories:
+  SiteAgency:
+    label: 'Site Agency'
+  SiteAgency.basics:
+    label: 'Basic Settings'
+    parent: SiteAgency
+  SiteAgency.company:
+    label: 'Company informations'
+    parent: SiteAgency 
+  SiteAgency.socials:
+    label: 'Company socials'
+    parent: SiteAgency
+  SiteAgency.parts:
+    label: 'Page parts'
+    parent: SiteAgency
+  SiteAgency.links:
+    label: 'Links'
+    parent: SiteAgency
+
+# add settings to your category
+settings:
+  # Basic settings
+  siteAgency.templateRootPath:
+    label: 'Template'
+    description: 'add your custom template root path'
+    category: SiteAgency.basics
+    type: string
+    default: 'EXT:site_agency/Resources/Private/PageView/Pages/'
+  siteAgency.partialRootPath:
+    label: 'Partials'
+    description: 'add yout custom partial root path'
+    category: SiteAgency.basics
+    type: string
+    default: 'EXT:site_agency/Resources/Private/PageView/Partials/'  
+  siteAgency.siteLogo:
+    label: 'Site logo'
+    description: 'add the path to your site logo'
+    category: SiteAgency.basics
+    type: string
+    default: 'EXT:site_agency/Resources/Public/Images/logoipsum-435.svg'
+  siteAgency.siteLogoAlt:
+    label: 'Site logo alt-tag'
+    description: 'add alt-tag to your company logo'
+    category: SiteAgency.basics
+    type: string
+    default: 'my beautiful company logo'
+  siteAgency.siteCssPath:
+    label: 'CSS File'
+    description: 'add the path to your css file'
+    category: SiteAgency.basics
+    type: string
+    default: 'EXT:site_agency/Resources/Public/Css/main.css'
+  siteAgency.siteJsPath:
+    label: 'JS File'
+    description: 'add the path to your js file'
+    category: SiteAgency.basics
+    type: string
+    default: 'EXT:site_agency/Resources/Public/JavaScript/main-js.js'      
+  siteAgency.mainMenuId:
+    label: 'Main navigation'
+    description: 'add your main navigation pageID'
+    category: SiteAgency.basics
+    type: int
+    default: 2
+  siteAgency.footerMenuId:
+    label: 'Footer navigation'
+    description: 'add your footer navigation pageID'
+    category: SiteAgency.basics
+    type: int
+    default: 9    
+  siteAgency.mainColor:
+    label: 'Main color'
+    description: 'pick your company main color'
+    category: SiteAgency.basics
+    type: color
+    default: '#FF8700'
+
+  # Company settings
+  siteAgency.companyName:
+    label: 'Company name'
+    description: 'define your company name'
+    category: SiteAgency.company
+    type: string
+    default: 'my company name'
+  siteAgency.companyAddress:
+    label: 'Street no.'
+    description: 'add street and no. - location'
+    category: SiteAgency.company
+    type: string
+    default: 'Street no. 189'
+  siteAgency.companyCity:
+    label: 'City'
+    description: 'add city - location'
+    category: SiteAgency.company
+    type: string
+    default: 'City'
+  siteAgency.companyZip:
+    label: 'Zip'
+    description: 'add zip - location'
+    category: SiteAgency.company
+    type: string
+    default: '01234'
+  siteAgency.companyEmail:
+    label: 'Email'
+    description: 'add your company email'
+    category: SiteAgency.company
+    type: string
+    default: 'info@email.com'
+  siteAgency.companyPhone:
+    label: 'Phone'
+    description: 'add your company phone number'
+    category: SiteAgency.company
+    type: string
+    default: '49 0123 45 56 78 9'    
+  siteAgency.companyContactPerson:
+    label: 'Contact person'
+    description: 'add your contact person'
+    category: SiteAgency.company
+    type: string
+    default: 'Rita Rough'
+
+  # Company socials
+  siteAgency.socialFacebookOn:
+    label: 'Facebook on/off'
+    description: 'If you want to display facebook -> turn on'
+    category: SiteAgency.socials
+    type: bool
+    default: false
+  siteAgency.socialFacebookLink:
+    label: 'Facebook link'
+    description: 'If you turned facebook on, add our URL'
+    category: SiteAgency.socials
+    type: string
+    default: 'https://facebook.com/your-profile'
+  siteAgency.socialInstagramOn:
+    label: 'Instagram on/off'
+    description: 'If you want to display instagram -> turn on'
+    category: SiteAgency.socials
+    type: bool
+    default: false
+  siteAgency.socialInstagramLink:
+    label: 'Instagram link'
+    description: 'If you turned instagram on, add our URL'
+    category: SiteAgency.socials
+    type: string
+    default: 'https://instagram.com/your-profile'  
+
+  # Page parts
+  siteAgency.breadcrumbs:
+    label: 'Breadcrumbs'
+    description: 'If you want to display breadcrumbs on the subpage -> turn on'
+    category: SiteAgency.parts
+    type: bool
+    default: false
+  siteAgency.socialFeed:
+    label: 'Social Feed'
+    description: 'If you want to display social menu on the subpage -> turn on'
+    category: SiteAgency.parts
+    type: bool
+    default: false    
+
+  # Legal Links
+  siteAgency.privacyPolicy:
+    label: 'Privacy policy'
+    description: 'include your privacy policy page id'
+    category: SiteAgency.links
+    type: page
+    default: 0
+  siteAgency.imprint:
+    label: 'Imprint'
+    description: 'include your imprint page id'
+    category: SiteAgency.links
+    type: page
+    default: 0    

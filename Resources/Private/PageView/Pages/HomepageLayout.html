@@ -1,0 +1,31 @@
+<f:layout name="Default" />
+<f:section name="Main">
+
+<f:asset.css identifier="main" href="EXT:site_agency/Resources/Public/Css/layout.css" />
+    <div class="container-fluid">
+        <div class="row">
+            <f:render partial="Content" arguments="{records: pageContent.hero.records}"/>
+        </div>
+    </div>
+    <section id="section_context">
+        <div class="container">
+            <f:render partial="Content" arguments="{records: pageContent.context.records}"/>
+        </div>
+    </section>
+    <section id="section_projects">
+        <div class="container">
+            <f:render partial="Content" arguments="{records: pageContent.projects.records}"/>
+        </div>
+    </section>
+    <section id="section_news">
+        <div class="container">
+            <f:render partial="Content" arguments="{records: pageContent.news.records}"/>
+        </div>
+    </section>
+    <section id="section_testimonials">
+        <div class="container">
+            <f:render partial="Content" arguments="{records: pageContent.testimonials.records}"/>
+        </div>
+    </section>
+
+</f:section>
