@@ -1,7 +1,7 @@
 mod.web_layout.BackendLayouts {
   subpageLayout {
     title = LLL:EXT:site_agency/Resources/Private/Language/locallang_be.xlf:backend_layout.subpage
-    icon = EXT:site_agency/Resources/Public/Icons/BackendLayouts/default.svg
+    icon = EXT:site_agency/Resources/Public/Icons/BackendLayouts/layout-svgrepo-com.svg
     config {
       backend_layout {
         colCount = 1

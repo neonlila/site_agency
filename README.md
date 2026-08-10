@@ -26,7 +26,27 @@ this sitepackage and add new features step by step.
     - TypoScript
 - Resources
     - Private
+        - Language
+            - locallang_be.xlf
+        - PageView
+            - Layouts
+                - Default.html
+            - Pages
+                - HomepageLayout.html
+                - SubpageLayout.html
+            - Partials
+                - Breadcrumbs.html
+                - Content.html
+                - Footer.html
+                - Navigation.html
+        - Sass
+            - main.scss
     - Public
+        - Css
+        - Fonts
+        - Icons
+        - Images (dummy logo)
+        - JavaScript
 - composer.json
 - ext_localconf.php
 - README.md
