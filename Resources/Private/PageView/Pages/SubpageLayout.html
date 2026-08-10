@@ -1,11 +1,13 @@
 <f:layout name="Default"/>
-
 <f:section name="Main">
+
     <section id="subsection_hero" class="container">
         <f:render partial="Content" arguments="{records: content.hero.records}"/>
     </section>
 
-    <f:render partial="Breadcrumbs" arguments="{_all}"/>
+    <f:if condition="{site.settings.siteAgency.breadcrumbs}">
+        <f:render partial="Breadcrumbs" arguments="{_all}"/>
+    </f:if>
     
     <section id="subsection_content" class="container">
         <div class="row">
@@ -20,4 +22,5 @@
     <section id="subsection_news">
         <f:render partial="Content" arguments="{records: content.news.records}"/>
     </section>
+
 </f:section>
