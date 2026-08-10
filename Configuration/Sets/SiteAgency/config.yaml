@@ -1,6 +1,6 @@
 # .. name is how you install it with composer | composer req tutorial/site-agency
 name: 'tutorial/site-agency'
-label: 'Tutorial - SitePackge'
+label: 'Tutorial - SitePackage'
 # ... define your dependencies
 dependencies:
   - typo3/fluid-styled-content
