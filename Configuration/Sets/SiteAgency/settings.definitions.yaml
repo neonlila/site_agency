@@ -145,6 +145,31 @@ settings:
     category: SiteAgency.socials
     type: string
     default: 'https://instagram.com/your-profile'  
+  siteAgency.socialXOn:
+    label: 'X on/off'
+    description: 'If you want to display X -> turn on'
+    category: SiteAgency.socials
+    type: bool
+    default: false
+  siteAgency.socialXLink:
+    label: 'X link'
+    description: 'If you turned x on, add our URL'
+    category: SiteAgency.socials
+    type: string
+    default: 'https://x.com/your-profile'  
+  siteAgency.socialLinkedOn:
+    label: 'LinkedIn on/off'
+    description: 'If you want to display linkedin -> turn on'
+    category: SiteAgency.socials
+    type: bool
+    default: false
+  siteAgency.socialLinkedLink:
+    label: 'Linkedin link'
+    description: 'If you turned linkedin on, add our URL'
+    category: SiteAgency.socials
+    type: string
+    default: 'https://linkedin.com/your-profile'
+
 
   # Page parts
   siteAgency.breadcrumbs:

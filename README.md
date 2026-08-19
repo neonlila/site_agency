@@ -80,5 +80,5 @@ I will add new features step by step. Request additinal infos, if you want.
 - [x] subpage template 
 - [x] breadcrumbs navigation with conditions
 - [ ] alternative navigation layout
-- [ ] social media feed menu on settings.definitions
+- [x] social media feed menu on settings.definitions
 - [ ] :tada:
